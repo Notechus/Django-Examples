@@ -6,9 +6,9 @@ app_name = 'music'
 # patterns in rayleight expressions
 urlpatterns = [
     # /music/
-    url(r'^$', views.index, name='index'),
+    url(r'^$', views.IndexView.as_view(), name='index'),
     # /music/71/
-    url(r'^(?P<album_id>[0-9]+)/$', views.detail, name='detail'),
-    # /music/71/favorite/
-    url(r'^(?P<album_id>[0-9]+)/favorite/$', views.favorite, name='favorite'),
+    url(r'^(?P<id>[0-9]+)/$', views.DetailView.as_view(), name='detail'),
+    # /music/album/add
+    url(r'^album/add/$', views.AlbumCreate.as_view(), name='album-add'),
 ]
