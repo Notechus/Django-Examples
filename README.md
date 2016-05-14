@@ -1,3 +1,3 @@
 # Django-Examples
 
-I am learning Django here from @thenewboston
+I am learning Django here from @buckyroberts
